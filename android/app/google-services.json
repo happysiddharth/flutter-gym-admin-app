@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "961561072457",
+    "firebase_url": "https://spartans-b1290.firebaseio.com",
+    "project_id": "spartans-b1290",
+    "storage_bucket": "spartans-b1290.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:961561072457:android:34400894cf2bf85d1e8098",
+        "android_client_info": {
+          "package_name": "com.example.spartans_admin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "961561072457-rhr2a2l3qap7jseq3kgi45ke8cq4a2k9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBzFpxEd_yoruvy6sg7d0sohMO2f4sAuYg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "961561072457-rhr2a2l3qap7jseq3kgi45ke8cq4a2k9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
