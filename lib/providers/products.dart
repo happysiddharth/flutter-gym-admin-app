@@ -9,56 +9,7 @@ class Products with ChangeNotifier {
   final token;
   Products(this.token);
   List<Product> _items = [
-//    Product(
-//        id: 'p1',
-//        fullName: 'Siddharth',
-//        mobile: '9045426913',
-//        dob: DateTime.now(),
-//        joinDate: DateTime.now(),
-//        address: 'Railway road ganj,pilkhuwa',
-//        state: 'up',
-//        pinCode: '245304',
-//        pendingMonths: 3),
-//    Product(
-//        id: 'p2',
-//        fullName: 'ravi',
-//        mobile: '9045426913',
-//        dob: DateTime.now(),
-//        joinDate: DateTime.now(),
-//        address: 'Railway road ganj,pilkhuwa',
-//        state: 'up',
-//        pinCode: '245304',
-//        pendingMonths: 2),
-//    Product(
-//        id: 'p3',
-//        fullName: 'shubham',
-//        mobile: '9045426913',
-//        dob: DateTime.now(),
-//        joinDate: DateTime.now(),
-//        address: 'Railway road ganj,pilkhuwa',
-//        state: 'up',
-//        pinCode: '245304',
-//        pendingMonths: 1),
-//    Product(
-//        id: 'p4',
-//        fullName: 'taru',
-//        mobile: '9045426913',
-//        dob: DateTime.now(),
-//        joinDate: DateTime.now(),
-//        address: 'mandi Railway road ganj,pilkhuwa',
-//        state: 'up',
-//        pinCode: '245304',
-//        pendingMonths: 6),
-//    Product(
-//        id: 'p5',
-//        fullName: 'yaman singh',
-//        mobile: '9045426913',
-//        dob: DateTime.now(),
-//        joinDate: DateTime.now(),
-//        address: 'Railway road ganj,pilkhuwa',
-//        state: 'up',
-//        pinCode: '245304',
-//        pendingMonths: 1),
+
   ];
   List<Product> notOnholdItems() {
     List<Product> l = _items.where((data) => data.isOnHold == false).toList();

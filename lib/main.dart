@@ -41,29 +41,30 @@ class MyApp extends StatelessWidget {
         ],
         child: Consumer<Auth>(
           builder: (ctx, auth, _) => MaterialApp(
-              title: 'Spartans',
-              theme: ThemeData(
-                primarySwatch: Colors.purple,
-                accentColor: Colors.deepOrange,
-                fontFamily: 'Lato',
-              ),
-              home: auth.isAuth
-                  ? ProductOverviewScreen()
-                  : FutureBuilder(
-                      future: auth.tryAutoLogin(),
-                      builder: (ctx, authResultSnapshot) =>
-                          authResultSnapshot.connectionState ==
-                                  ConnectionState.waiting
-                              ? Container()
-                              : AuthScreen(),
-                    ),
-              routes: {
-                ProductOverviewScreen.route: (ctx) => ProductOverviewScreen(),
-                'registration': (ctx) => Register(),
-                'transaction': (ctx) => OrdersScreen(),
-                Users.route: (ctx) => Users(),
-                UserProfile.route: (ctx) => UserProfile(),
-              }),
+            title: 'Spartans',
+            theme: ThemeData(
+              primarySwatch: Colors.purple,
+              accentColor: Colors.deepOrange,
+              fontFamily: 'Lato',
+            ),
+            home: auth.isAuth
+                ? ProductOverviewScreen()
+                : FutureBuilder(
+                    future: auth.tryAutoLogin(),
+                    builder: (ctx, authResultSnapshot) =>
+                        authResultSnapshot.connectionState ==
+                                ConnectionState.waiting
+                            ? Container()
+                            : AuthScreen(),
+                  ),
+            routes: {
+              ProductOverviewScreen.route: (ctx) => ProductOverviewScreen(),
+              'registration': (ctx) => Register(),
+              'transaction': (ctx) => OrdersScreen(),
+              Users.route: (ctx) => Users(),
+              UserProfile.route: (ctx) => UserProfile(),
+            },
+          ),
         ));
   }
 }

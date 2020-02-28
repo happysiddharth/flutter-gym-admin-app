@@ -25,11 +25,12 @@ class Users extends StatelessWidget {
       appBar: search_toggle.search == false
           ? AppBar(title: Text('All users'), actions: <Widget>[
               IconButton(
-                  onPressed: () => search_toggle.toggle(),
-                  icon: Icon(
-                    FontAwesomeIcons.search,
-                    color: Colors.white,
-                  )),
+                onPressed: () => search_toggle.toggle(),
+                icon: Icon(
+                  FontAwesomeIcons.search,
+                  color: Colors.white,
+                ),
+              ),
             ])
           : AppBar(
               actions: <Widget>[
